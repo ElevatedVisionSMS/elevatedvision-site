@@ -67,3 +67,6 @@ h3 { margin:0 0 12px; font-size:24px; font-weight:600; }
 .checklist li { position:relative; padding:20px 20px 20px 52px; border:1px solid #2a2a2a; border-radius:16px; color:var(--muted); line-height:1.7; }
 .checklist li::before { content:""; position:absolute; left:20px; top:24px; width:18px; height:18px; border:2px solid var(--taupe-light); border-radius:4px; }
 .checklist li strong { color:var(--cream); font-weight:600; }
+.nav-contact { display:flex; gap:14px; align-items:center; }
+.nav-contact a { color:var(--taupe-light); display:inline-flex; width:36px; height:36px; align-items:center; justify-content:center; border:1px solid #2a2a2a; border-radius:999px; }
+.nav-contact a:hover { color:var(--black); background:var(--cream); border-color:var(--cream); }
