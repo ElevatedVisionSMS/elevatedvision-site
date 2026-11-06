@@ -17,7 +17,7 @@ h3 { margin:0 0 12px; font-size:24px; font-weight:600; }
 .btn-primary:hover { background:var(--taupe-light); color:var(--black); }
 .btn-ghost { border:1px solid var(--taupe); color:var(--cream); }
 .nav { display:flex; justify-content:space-between; align-items:center; padding:20px 64px; flex-wrap:wrap; gap:16px; }
-.nav img { height:48px; width:auto; }
+.nav img { height:64px; width:auto; }
 .nav-links { display:flex; gap:24px; font-size:14px; color:var(--taupe-light); flex-wrap:wrap; }
 .nav-links a[aria-current="page"] { color:var(--cream); }
 .hero { padding:112px 64px 96px; min-height:640px; display:flex; flex-direction:column; justify-content:center; gap:28px; border-top:1px solid var(--line); }
@@ -56,7 +56,7 @@ h3 { margin:0 0 12px; font-size:24px; font-weight:600; }
   section, .nav, .hero, .crumbs, .footer { padding-left:24px; padding-right:24px; }
   h1 { font-size:44px; } h2 { font-size:32px; }
   .grid3, .grid2, .footer { grid-template-columns:1fr; }
-  .nav img { height:40px; }
+  .nav img { height:52px; }
 }
 @media (prefers-reduced-motion: no-preference) {
   .hero h1, .hero .lead { animation: rise .9s ease-out both; }
@@ -80,3 +80,13 @@ h3 { margin:0 0 12px; font-size:24px; font-weight:600; }
 .logo-strip { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:16px; align-items:center; }
 .logo-strip img { width:100%; height:160px; object-fit:contain; background:#000; border:1px solid #2a2a2a; border-radius:16px; padding:14px; }
 .logo-strip img.logo-light { filter:brightness(2.2); }
+
+.page-image { margin:0 64px 40px; }
+.page-image img { width:100%; max-height:420px; object-fit:contain; background:#000; border:1px solid #2a2a2a; border-radius:16px; padding:16px; display:block; }
+.nav { background:var(--cream); }
+.nav-links { color:#3a332d; }
+.nav-links a { color:#3a332d; }
+.nav-links a:hover, .nav-links a[aria-current="page"] { color:var(--black); }
+.nav-contact a { color:#3a332d; border-color:#b9b09c; }
+.nav-contact a:hover { color:var(--cream); background:var(--black); border-color:var(--black); }
+@media (max-width: 720px) { .page-image { margin:0 24px 32px; } }
